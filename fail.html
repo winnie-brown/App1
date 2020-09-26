@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Failure</title>
+    <style>
+        html{
+            height: 100vh;
+            font-family:'Lato',sans-serif;
+        }
+        body{
+            height: 100%;
+            background:linear-gradient(to right bottom,#f55858,#bd3f32);
+        }
+        .container{
+            box-shadow:0 0.5rem 3rem rgba(0, 0, 0, 0.422);
+            text-align: center;
+            background-color: #fff;
+            width: 40%;
+            position: fixed;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            min-height: 45%;
+        }
+        h1{
+            color:red;
+        }
+        .msg{
+            line-height: 2rem;
+            color:rgb(49, 49, 49);
+        }
+        .failure-icon{
+            width:25%;
+            margin-top: 1rem;
+        }
+        .submit-btn{
+border: none;
+background-color:rgb(252, 82, 82);
+padding: 1rem;
+outline: none;
+border-radius: 0.1rem;
+margin:1rem 0;
+cursor: pointer;
+        }
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <img class="failure-icon" src="images/failure-icon.jpg">
+        <h1>Failure</h1>
+<p class="msg"><b>Uh, oh.</b> There was problem signing in.<br>
+    Try using a different email address.
+   </p>
+<form action="/" method="POST">
+<button class="submit-btn" type="submit">Try Again</button>
+</form>
+</div>
+</body>
+</html>

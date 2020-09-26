@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    height: 100%;
+}
+label{
+    font-weight: 600;
+    display: block;
+}
+input{
+    font-size:1.2rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid transparent;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.185);
+    margin:1rem 0;
+}
+input:focus{
+    border-bottom: 2px solid #000;
+}
+.form{
+    height: 80%;
+    width: 80%;
+    margin:10%;
+    margin-top: 5%;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.233);
+    position: relative;
+    display: flex;
+}
+.innerform1{
+    height: 100%;
+    width: 50%;
+background-position: center;
+    background-image:url(../images/signup2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.form__section{
+    margin:1rem 0;
+  
+}
+.innerform2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width:50%;
+    margin-top: 3rem;
+}
+h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+.submit{
+    display: block;
+    margin: 1rem;
+    font-size:1.2rem;
+    padding: 0.8rem;
+    background: rgb(167, 116, 68);
+    cursor: pointer;
+    border: none;
+    outline:none;
+    border-radius: 2px;
+    box-shadow: 0 0.1rem 4rem rgba(0, 0, 0, 0.308);
+}
+#name{
+    text-transform: capitalize;
+}
+.errorMessage{
+    opacity: 0;
+    transform: translateX(-5px);
+    transition:opacity 600ms, transform 600ms ease-in;
+    pointer-events: none;
+
+}
+.errorMessageAnim{
+    opacity: 1;
+    transform: translateX(2rem);
+    transition: opacity 600ms, transform 600ms ease-in;
+    pointer-events: none;
+    color:grey;
+    font-size:1.2rem;
+}
+@media (max-width:800px){
+    html{
+        font-size:13px;
+    }
+    .innerform1{
+        display: none;
+    }
+    .innerform2{
+        width: 100%;
+    }
+}

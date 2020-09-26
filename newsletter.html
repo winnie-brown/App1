@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/newsletter.css">
+</head>
+<body>
+    <h2>Signup For Newsletter</h2>
+    <div class="form">
+        <div class="innerform1">
+        </div>
+<div class="innerform2">
+        <form action="/" method="POST">
+            <p class="err errorMessage">Please fill in all spaces</p>
+        <div class="form__section form__section-1">
+            <label for="name"> First Name </label>
+            <input class="userInputs" type="text" id="name" name="fName">
+        </div>
+        <div class="form__section form__section-2">
+            <label for="lname">Last Name </label>
+            <input class="userInputs" type="text" id="lname" name="lName">
+        </div>
+<div class="form__section form__section-3">
+        <label for="email">Email </label>
+        <input class="userInputs" type="email" id="email" name="email">
+        <button type="submit" class="submit">Signup</button>
+    </div>
+        </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        const errMsg = document.querySelector(".errorMessage");
+        const allInputs = document.querySelectorAll(".userInputs");
+        const form = document.querySelector("form");
+form.onsubmit = e=>{
+allInputs.forEach(elem=>{
+if(elem.value === ""){
+e.preventDefault();
+errMsg.className = "errorMessageAnim";
+}
+elem.addEventListener("input",()=>errMsg.className = "errorMessage");
+})
+}
+    </script>
+</body>
+</html>
